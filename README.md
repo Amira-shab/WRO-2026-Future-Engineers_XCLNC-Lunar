@@ -10,11 +10,15 @@ Our goal for the 2026 season was to move away from "brute force" designs toward 
 
 ### 1.1 Comparison with Previous Design
 In our previous season, our robot was significantly larger and less efficient. 
-![Previous robot](images/differential_detail.jpg)
+![Previous robot](old-robot.jpg)
 * **Old Design:** Heavy chassis, high center of gravity, and complex but "sloppy" mechanical linkages. 
-* **New Design (Current):** 35% smaller, with a concentrated center of mass over the front axle and a reinforced drivetrain.
-![Comparison: Old vs New Robot](images/old_robot_comparison.jpg)
-*Caption: Our old design (left) struggled with tight turns due to its wheelbase length, leading us to the current optimized chassis (right).*
+* **New Design (Current):** 50% smaller, with a concentrated center of mass over the front axle and a reinforced drivetrain.
+![Comparison: Old vs New Robot](image-18-04-26-09-10.jpg)
+![Comparison: Old vs New Robot](image-18-04-26-09-10-1.jpg)
+![Comparison: Old vs New Robot](image-18-04-26-09-10-2.jpg)
+![Comparison: Old vs New Robot](image-18-04-26-09-10-3.jpg)
+![Comparison: Old vs New Robot](image-18-04-26-09-10-4.jpg)
+
 
 ---
 
@@ -33,8 +37,8 @@ During the prototyping phase, we conducted a study on steering geometries. While
 To ensure the robot doesn't skid during high-speed laps, we integrated a **LEGO Technic Differential**. 
 * **The Problem:** A solid axle forces both wheels to rotate at the same speed, causing the inner wheel to lose traction in turns.
 * **The Solution:** The differential allows the outer wheel to travel a longer path than the inner wheel. This results in smooth, predictable cornering and preserves the lifespan of our motors.
-![Differential Assembly](images/differential_detail.jpg)
-
+![Differential Assembly](dif.jpg)
+This is our differential before we changed the design and made the work more beautiful.
 ---
 
 ## 3. Sensor Fusion & Power Architecture
@@ -43,6 +47,7 @@ To ensure the robot doesn't skid during high-speed laps, we integrated a **LEGO 
 We use the **Pixy2.1 LEGO Edition** not just as a color sensor, but as a spatial coordinate generator.
 * **Coordinate Mapping:** We map the X-center of detected signatures to a PID error value.
 * **Frame Rate:** Running at 60 FPS allows the robot to react to an obstacle in less than 16ms, which is vital when moving at the robot's top speed of 1.2 m/s.
+* ![camera](images/steering_geometry.jpg)
 
 ### 3.2 Electronics & Power Stability
 * **Hub Placement:** The Spike Prime Hub is mounted horizontally to keep the center of gravity low.
