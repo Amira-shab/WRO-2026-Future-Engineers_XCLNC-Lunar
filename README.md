@@ -13,11 +13,11 @@ In our previous season, our robot was significantly larger and less efficient. 
 ![Previous robot](old-robot.jpeg)
 * **Old Design:** Heavy chassis, high center of gravity, and complex but "sloppy" mechanical linkages. 
 * **New Design (Current):** 50% smaller, with a concentrated center of mass over the front axle and a reinforced drivetrain.
-![Comparison: Old vs New Robot](image-18-04-26-09-10.jpeg)
-![Comparison: Old vs New Robot](image-18-04-26-09-10-1.jpeg)
-![Comparison: Old vs New Robot](image-18-04-26-09-10-2.jpeg)
-![Comparison: Old vs New Robot](image-18-04-26-09-10-3.jpeg)
-![Comparison: Old vs New Robot](image-18-04-26-09-10-4.jpeg)
+![Comparison: Old vs New Robot](robot-front.jpeg)
+![Comparison: Old vs New Robot](robot-top.jpeg)
+![Comparison: Old vs New Robot](robot-left-side.jpeg)
+![Comparison: Old vs New Robot](robot-right-side.jpeg)
+![Comparison: Old vs New Robot](robot-bottom.jpeg)
 
 
 ---
@@ -31,7 +31,7 @@ During the prototyping phase, we conducted a study on steering geometries. While
 1. **Precision in Micro-movements:** At the small scale of LEGO parts, the "play" (mechanical backlash) in Ackermann linkages often absorbs the steering input. Parallel steering provides a more direct and rigid connection to the motor.
 2. **Maximum Turning Angle:** Our parallel mechanism allows for a 70-degree wheel rotation without the linkages locking up. This is crucial for the Parallel Parking maneuver where space is extremely limited.
 3. **Friction Compensation:** Since we use thin front tires, the slight "sliding" effect of parallel steering actually helps the robot pivot faster in sharp corners without the bouncing effect often seen in complex LEGO linkages.
-![Steering Geometry Analysis](images/steering_geometry.jpg)
+![Steering Geometry Analysis](steering.jpeg)
 
 ### 2.2 Rear Axle & Differential Logic
 To ensure the robot doesn't skid during high-speed laps, we integrated a **LEGO Technic Differential**. 
@@ -47,7 +47,7 @@ This is our differential before we changed the design and made the work more bea
 We use the **Pixy2.1 LEGO Edition** not just as a color sensor, but as a spatial coordinate generator.
 * **Coordinate Mapping:** We map the X-center of detected signatures to a PID error value.
 * **Frame Rate:** Running at 60 FPS allows the robot to react to an obstacle in less than 16ms, which is vital when moving at the robot's top speed of 1.2 m/s.
-* ![camera](images/steering_geometry.jpg)
+* ![camera](pixy.webp)
 
 ### 3.2 Electronics & Power Stability
 * **Hub Placement:** The Spike Prime Hub is mounted horizontally to keep the center of gravity low.
