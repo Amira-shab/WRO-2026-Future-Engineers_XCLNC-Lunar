@@ -1,6 +1,9 @@
 # WRO 2026 Future Engineers - Team   XCLNC Lunar
 ![Main Robot View](image-18-04-26-09-10.jpeg) 
-
+![Main Robot View](image-18-04-26-09-10-1.jpeg) 
+![Main Robot View](image-18-04-26-09-10-2.jpeg) 
+![Main Robot View](image-18-04-26-09-10-3.jpeg) 
+![Main Robot View](image-18-04-26-09-10-4.jpeg) 
 ## 1. Introduction
 Our robot is an autonomous vehicle developed for the WRO 2026 Future Engineers category. It is built using the **LEGO Spike Prime** platform and integrated with a **Pixy2** camera. The goal is to achieve high-speed navigation, obstacle avoidance, and precise parallel parking.
 
